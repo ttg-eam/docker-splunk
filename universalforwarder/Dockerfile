@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-MAINTAINER Denis Gladkikh <docker-splunk@denis.gladkikh.email>
+MAINTAINER Yugesh Avadhanula <yugesh.a@tcs.com>
 
 ENV SPLUNK_PRODUCT universalforwarder
 ENV SPLUNK_VERSION 6.5.0
