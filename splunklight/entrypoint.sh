@@ -52,8 +52,8 @@ Splunk Light
 
   Usage:
 
-    docker run -it outcoldman/splunk:latest-light
-    docker run --env SPLUNK_START_ARGS="--accept-license" outcoldman/splunk:latest-light
+    docker run -it ttg-eam/docker-splunk:7.0.0-light
+    docker run --env SPLUNK_START_ARGS="--accept-license" ttg-eam/docker-splunk:7.0.0-light
 
 EOF
     exit 1
