@@ -53,5 +53,9 @@ WORKDIR /opt/splunk
 # Configurations folder, var folder for everyting (indexes, logs, kvstore)
 VOLUME [ "/opt/splunk/etc", "/opt/splunk/var" ]
 
+ADD docker.xml ${SPLUNK_BACKUP_DEFAULT_ETC}/etc/apps/search/local/data/ui/views/
+ADD docker_container.xml ${SPLUNK_BACKUP_DEFAULT_ETC}/etc/apps/search/local/data/ui/views/
+ADD inputs.conf ${SPLUNK_BACKUP_DEFAULT_ETC}/etc/apps/search/local/
+
 ENTRYPOINT ["/sbin/entrypoint.sh"]
 CMD ["start-service"]
